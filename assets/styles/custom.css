@@ -1,0 +1,9 @@
+.dropdown-menu>li>div {
+    display: block;
+    padding: 0px 30px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
