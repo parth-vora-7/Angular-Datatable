@@ -1,0 +1,55 @@
+<!doctype html>
+<html ng-app="pagination">
+  <head>
+    <title>Datatable with AngularJS & Laravel</title>
+
+    <script src="assets/scripts/jquery-2.2.0.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-datatables/dist/angular-datatables.min.js"></script>
+    <script src="assets/scripts/dataTables.colReorder.min.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.min.js"></script>      
+
+    <script src="assets/scripts/dataTables.buttons.js"></script>
+    <script src="assets/scripts/buttons.colVis.js"></script>
+    <script src="bower_components/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.js"></script>
+    <link href="assets/styles/buttons.dataTables.min.css" rel="stylesheet"/>
+
+    <script src="bower_components/angular-animate/angular-animate.min.js "></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+    <script src="assets/scripts/script.js"></script>
+    
+    <link href="assets/styles/colReorder.dataTables.min.css" rel="stylesheet"/>
+    <link href="bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet"/>
+
+    <link href="assets/styles/awesome-bootstrap-checkbox.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.5.0/css/font-awesome.min.css" />
+    
+    <link href="assets/styles/custom.css" rel="stylesheet"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body ng-controller="PaginationDemoCtrl">
+    <div class="container">
+      <h2 align="center">Datatable demo</h2>           
+      <h4>Demo is created using:</h4>
+        <ul>
+          <li><a href="http://l-lin.github.io/angular-datatables/#/welcome" target="_blank">Datatables</a></li>
+          <li><a href="https://angularjs.org/" target="_blank">Angularjs</a></li>
+          <li><a href="https://laravel.com/" target="_blank">Laravel</a></li>
+        </ul>
+      
+      <p>This demo contains pagination(server side), sorting(server side), column reorder by dragging and column visibility toggle</p>
+      
+      <hr>
+
+      <table datatable="" dt-options="dtOptions" dt-columns="dtColumns" class="table table-striped row-border hover"></table>
+
+      <hr>
+    </div>		
+  </body>
+</html>
